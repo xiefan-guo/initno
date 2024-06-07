@@ -1,4 +1,4 @@
-## InitNO: Boosting Text-to-Image Diffusion Models via Initial Noise Optimization<br><sub>Official PyTorch code release for the CVPR 2024 paper: https://arxiv.org/abs/2404.04650</sub>
+## Boosting Text-to-Image Diffusion Models via Initial Noise Optimization<br><sub>Official PyTorch code release for the CVPR 2024 paper: https://arxiv.org/abs/2404.04650</sub>
 
 ![I4VGen](./docs/initno.png)
 
@@ -43,7 +43,7 @@ You can specify the following arguments in `run_sd_initno.py`:
 ![A cat and a rabbit](./docs/a_cat_and_a_rabbit_seed0.jpg)
 
 **Float16 precision:** You can use `torch.float16` when loading the stable diffusion model to speed up inference and reduce memory usage. However, this may somewhat degrade the quality of the generated results.
-```.bash
+```python
 pipe = StableDiffusionInitNOPipeline.from_pretrained(SD14_VERSION, torch_dtype=torch.float16).to("cuda")
 ```
 
