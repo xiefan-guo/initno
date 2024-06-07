@@ -36,9 +36,7 @@ You can specify the following arguments in `run_sd_initno.py`:
 * `token_indices`: a list of target token indices
 * `result_root`: path to save generated results
 
-**Visualization of attention maps:** We provide the `fn_show_attention` function in `attn_utils.py` for attention map visualization. By running the above command, you will be able to obtain the following visualization of attention maps along with the generated images.
-
-![A cat and a rabbit](./docs/a_cat_and_a_rabbit_seed0.jpg)
+**Visualization of attention maps:** We provide the `fn_show_attention` function in `attn_utils.py` for attention map visualization. By running the above command, you will be able to obtain the visualization of attention maps along with the generated images.
 
 **Float16 precision:** You can use `torch.float16` when loading the stable diffusion model to speed up inference and reduce memory usage. However, this may somewhat degrade the quality of the generated results.
 ```python
