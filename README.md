@@ -24,9 +24,7 @@ conda env create -f environment.yaml
 conda activate initno_env
 ```
 
-**Hugging face fiffusers library:** Our code relies also on Hugging Face's [diffusers](https://github.com/huggingface/diffusers) library for downloading the Stable Diffusion model.
-
-**Generating images:** Run the following command to generate images.
+**Generating images:** Our code relies on Hugging Face's [diffusers](https://github.com/huggingface/diffusers) library for downloading the Stable Diffusion model. Run the following command to generate images.
 ```.bash
 python run_sd_initno.py
 ```
